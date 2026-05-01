@@ -6,7 +6,7 @@ This repository includes **all components**:
 
 * **Server** → Gateway
 * **Client** → Checker
-* **TLS Binary** → Forwarder (https://workupload.com/file/PpukxLkr7xt)
+* **TLS Binary** → Forwarder (https://github.com/bogdanfinn/tls-client/releases/tag/v1.14.0)
 
 ---
 
