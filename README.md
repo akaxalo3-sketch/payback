@@ -6,12 +6,13 @@ This repository includes **all components**:
 
 * **Server** → Gateway
 * **Client** → Checker
-* **TLS Binary** → Forwarder (https://workupload.com/file/PpukxLkr7xt)
+* **TLS Binary** → Forwarder[](https://workupload.com/file/PpukxLkr7xt)
 
 ---
 
 ## 🚀 Features
 
+* Advanced TLS Fingerprinting using `Chrome 146`, with random TLS `Extension` order and set `Header Order` in `http 1`
 * End-to-end encryption using AES-256-GCM
 * Hardware ID (HWID) binding – one device per API key
 * Automatic client updates
@@ -64,7 +65,6 @@ Checker/
 ### ⚠️ Important
 
 The gateway forwards **all TLS requests** to the `tls-client` forwarder.
-
 The Node.js server (`server.js`) acts as a secure encrypted proxy.
 All decrypted traffic is forwarded to the **tls-client forwarder** (`forwarder_client.0`), which must run on:
 
@@ -89,7 +89,7 @@ npm install
 node keygen.js
 ```
 
-Copy the generated **64-character hex string**.
+Copy the generated 64-character hex string.
 
 ---
 
@@ -146,9 +146,7 @@ http://localhost:3000
 
 💡 **Production Tip:**
 Use `pm2` or system services to run both:
-
-* `forwarder_client.0`
-* `server.js`
+`forwarder_client.0` + `server.js`
 
 ---
 
